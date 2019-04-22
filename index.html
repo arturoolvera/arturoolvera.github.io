@@ -1,4 +1,25 @@
-<html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>mathtest</title>
+  <style>
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+    var mathElements = document.getElementsByClassName("math");
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") { katex.render(texText.data, mathElements[i], { displayMode: mathElements[i].classList.contains("display"), throwOnError: false } );
+    }}});</script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.css" />
+</head>
 <body>
 <h1 style ="font-family:Courier New;">arturo olvera's website</h1>
 <h2 style ="font-family:Comic Sans MS;">este es mi nuevo <i>sitio web!</i></h2>
@@ -28,50 +49,14 @@ document.getElementById("5").innerHTML = timeFour.getHours() + ":" + timeFour.ge
 document.getElementById("6").innerHTML = timeFive.getHours() + ":" + timeFive.getMinutes();
 document.getElementById("7").innerHTML = timeSix.getHours() + ":" + timeSix.getMinutes();
 </script>
-</body>
-<head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>mkdwn</title>
-  <style>
-      code{white-space: pre-wrap;}
-      span.smallcaps{font-variant: small-caps;}
-      span.underline{text-decoration: underline;}
-      div.column{display: inline-block; vertical-align: top; width: 50%;}
-  </style>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS_CHTML-full" type="text/javascript"></script>
-  <!--[if lt IE 9]>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
-  <![endif]-->
-</head>
-<body>
-<h3 id="population-in-1990">Population in 1990:</h3>
-<p><span class="math display">\[
-663906 = ae^{-kt} \\
-Since: k = 0 \\
-663906 = ae^0 \\
-663906 = a
-\]</span></p>
-<h3 id="finding-k">Finding k:</h3>
-<p><span class="math display">\[
-641695 =  663906e^{-9k} \\
-e^{-9k} = \frac{641695}{663906} \\
--9k = ln\left(\frac{641695}{663906}\right)\\
-k = \left( \frac{ln\left(\frac{641695}{663906}\right)}{-9} \right) \\
-k = −0.038837874418378
-\]</span></p>
-<h3 id="predicting-in-2020">Predicting in 2020:</h3>
-<p><span class="math display">\[
-a = 663906\\
-k = −0.038837874418378 \\
-\text{years since 1990} = 2020-1990 = 30 \\
-pop_{2020}=663906e^{−0.038837874418378\times30}=207059
-\]</span></p>
-<h3 id="this-is-just-some-tests">This is just some tests</h3>
-<p><span class="math display">\[
-\left( \int_a^b f(x) \ dx = F(x) + C \right)^1_2
-\]</span></p>
+<h3 id="ok-here-it-is">Ok here it is</h3>
+<p><span class="math display">\int_0^1\frac{x^4(1-x)^4}{1+x^2}\,dx =\frac{22}{7}-\pi</span></p>
+<p>Ok now here is some text to see what text looks like.</p>
+<h3 id="double-integrals-over-rectangles">15.1 - DOUBLE INTEGRALS OVER RECTANGLES</h3>
+<p>review definite integrals: riemman sums <span class="math inline">\rightarrow \sum_{i = 1}^n f (x_i^*) \, \Delta x</span></p>
+<p><span class="math display">
+\int_a^b f(x) dx = lim_{x\to\rightarrow\infty} f(x)
+</span></p>
 </body>
 </html>
-</html>
+
