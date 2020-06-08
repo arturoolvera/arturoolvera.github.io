@@ -1,63 +1,31 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
 <head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <title>arturoolvera</title>
-  <style>
-      code{white-space: pre-wrap;}
-      span.smallcaps{font-variant: small-caps;}
-      span.underline{text-decoration: underline;}
-      div.column{display: inline-block; vertical-align: top; width: 50%;}
-  </style>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.js"></script>
-  <script>document.addEventListener("DOMContentLoaded", function () {
-    var mathElements = document.getElementsByClassName("math");
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") { katex.render(texText.data, mathElements[i], { displayMode: mathElements[i].classList.contains("display"), throwOnError: false } );
-    }}});</script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.css" />
 </head>
+
 <body>
 <h1 style ="font-family:Courier New;">arturo olvera's website</h1>
-<h2 style ="font-family:Comic Sans MS;">este es mi nuevo <i>sitio web!</i></h2>
-que pecs wecs, como andiamo
-<p id="1"></p>
-<p id="2"></p>
-<p id="3"></p>
-<p id="4"></p>
-<p id="5"></p>
-<p id="6"></p>
-<p id="7"></p>
+<h2 style ="font-family:Comic Sans MS;">quionda</h2><br>
 
-<h1>Some test stuff: </h1>
-<script>
-var currDate = new Date();
-var timeOne = new Date(currDate.getTime() + (15 + 90 * 1) *60000);
-var timeTwo = new Date(currDate.getTime() + (15 + 90 * 2) *60000);
-var timeThree = new Date(currDate.getTime() + (15 + 90 * 3) *60000);
-var timeFour = new Date(currDate.getTime() + (15 + 90 * 4) *60000);
-var timeFive = new Date(currDate.getTime() + (15 + 90 * 5) *60000);
-var timeSix = new Date(currDate.getTime() + (15 + 90 * 6) *60000);
-
-document.getElementById("1").innerHTML = "Current: " + currDate.getHours() + ":" + currDate.getMinutes();
-document.getElementById("2").innerHTML = timeOne.getHours() + ":" + timeOne.getMinutes();
-document.getElementById("3").innerHTML = timeTwo.getHours() + ":" + timeTwo.getMinutes();
-document.getElementById("4").innerHTML = timeThree.getHours() + ":" + timeThree.getMinutes();
-document.getElementById("5").innerHTML = timeFour.getHours() + ":" + timeFour.getMinutes();
-document.getElementById("6").innerHTML = timeFive.getHours() + ":" + timeFive.getMinutes();
-document.getElementById("7").innerHTML = timeSix.getHours() + ":" + timeSix.getMinutes();
-</script>
-<h3 id="ok-here-it-is">Ok here it is</h3>
-<p><span class="math display">\int_0^1\frac{x^4(1-x)^4}{1+x^2}\,dx =\frac{22}{7}-\pi</span></p>
-<p>Ok now here is some text to see what text looks like.</p>
-<h3 id="double-integrals-over-rectangles">15.1 - DOUBLE INTEGRALS OVER RECTANGLES</h3>
-<p>review definite integrals: riemman sums <span class="math inline">\rightarrow \sum_{i = 1}^n f (x_i^*) \, \Delta x</span></p>
-<p><span class="math display">
-\int_a^b f(x) dx = lim_{x\to\rightarrow\infty} f(x)
-</span></p>
+<table>
+    <tr>
+        <th>Cycles</th>
+        <th>Time</th>
+    </tr>
+    <script>
+        var curr = new Date();
+        for (i = 0; i <= 6; i++) {
+            document.write("<tr>")
+            document.write("<td>" + i + "</td>")
+            if (i == 0) {
+                var newtime = curr;
+            } else {
+                var newtime = new Date(curr.getTime() + (15 + 90 * i) *60000);
+            }
+            document.write("<td>" + newtime.toLocaleTimeString() + "</td>")
+        }
+    </script>
+</table>
 </body>
 </html>
 
