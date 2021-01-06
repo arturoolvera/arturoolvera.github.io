@@ -1,0 +1,61 @@
+.me {
+    width: 40%;
+    height: 100%;
+    float: left;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    overflow-x: hidden;
+    padding-top: 60px;
+    text-align: center;
+}
+.about {
+    height: 100%;
+    position: fixed;
+    margin-left: 30%;
+    padding: 10% 20% 10% 15%;
+}
+
+img {
+    padding: 5px;
+}
+
+h1 {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 40px;
+    font-weight: normal;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+td {
+    font-family: 'Roboto Mono', monospace;
+}
+
+th {
+    font-family: 'Loto', sans-serif;
+}
+
+.button {
+  background-color: #F2F2F2;
+  border: none;
+  color: black;
+  font-family: 'Roboto Mono', monospace;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
