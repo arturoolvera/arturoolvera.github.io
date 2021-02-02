@@ -42,13 +42,21 @@
         </p>
 
         <input type="button" id="button" class="button" value="Sleepy?" onclick="hide()">
+        <input type="button" id="reset" class="button" value="Draw" onclick="reset()">
 
-        <table id="sleep" >
+        <table id="sleep">
             <tr>
                 <th>Cycles</th>
                 <th>Time</th>
             </tr>
         </table>
+
+
+        <div id="p5">
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+          <script src="triangle.js"></script>
+          <script src="point.js"></script>
+        </div>
     </div>
     <script src="script.js" type="text/javascript"></script>
 </body>

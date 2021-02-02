@@ -1,5 +1,6 @@
 var table = document.getElementById("sleep");
 var button = document.getElementById("button");
+var drawing = document.getElementById("p5");
 
 var curr = new Date();
 for (i = 0; i <= 6; i++) {
@@ -27,5 +28,16 @@ function hide() {
     } else {
         table.style.display = "none";
         button.value = "Sleepy?"
+    }
+}
+
+drawing.style.display = "none";
+
+function reset() {
+    if (drawing.style.display === "none") {
+        setup();
+        drawing.style.display = "block";
+    } else {
+        drawing.style.display = "none";
     }
 }
