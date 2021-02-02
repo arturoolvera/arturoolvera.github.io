@@ -59,3 +59,6 @@ th {
   border-radius: 10px;
 }
 
+#sleep {
+    display: none;
+}
