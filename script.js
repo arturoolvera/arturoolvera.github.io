@@ -1,5 +1,5 @@
 var table = document.getElementById("sleep");
-var button = document.getElementById("button");
+var button = document.getElementById("sleep_b");
 var drawing = document.getElementById("p5");
 
 var curr = new Date();
