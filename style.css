@@ -1,34 +1,19 @@
 #me {
-    /*
-    width: 40%;
-    float: left;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    bottom: 0;
-    overflow-x: hidden;
-    background-color: yellow;
-    */
-    height: 100%;
-    padding-top: 60px;
+    padding-top: 10%;
     text-align: center;
 }
 
 #about {
-    /*
-    position: fixed;
-    margin-left: 30%;
-    background-color: blue;
-    */
-    height: 100%;
     padding: 10%;
+    padding-top: 15%;
+}
+
+#name {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 40px;
 }
 
 img { padding: 5px; }
-
-h1 {
-    font-family: 'Roboto Mono', monospace;
-}
 
 p {
     font-family: 'Lato', sans-serif;
@@ -41,7 +26,7 @@ td { font-family: 'Roboto Mono', monospace; }
 
 th { font-family: 'Loto', sans-serif; }
 
-#sleep { display: none; } /* prevent table artefact on load */
+#sleep { display: none; } /* prevent table artifact on load */
 
 .button {
   background-color: #F2F2F2;
