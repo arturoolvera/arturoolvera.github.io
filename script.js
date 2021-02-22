@@ -1,6 +1,7 @@
 var table = document.getElementById("sleep");
 var button = document.getElementById("sleep_b");
-var drawing = document.getElementById("p5");
+var serpinski_draw = document.getElementById("serpinski");
+var lissajous_draw = document.getElementById("lissajous");
 
 var curr = new Date();
 for (i = 0; i <= 6; i++) {
@@ -23,7 +24,7 @@ table.style.display = "none";
 
 function hide() {
     if (table.style.display === "none") {
-        table.style.display = "block";
+        table.style.display = "inline-table";
         button.value = "Sleep!";
     } else {
         table.style.display = "none";
@@ -31,13 +32,24 @@ function hide() {
     }
 }
 
-drawing.style.display = "none";
+var drawings = [serpinski_draw, lissajous_draw]
+var drawn = false; 
+var drawnum = 0; 
+serpinski_draw.style.display = "none";
+lissajous_draw.style.display = "none";
 
-function reset() {
-    if (drawing.style.display === "none") {
-        setup();
-        drawing.style.display = "block";
+function drawing() {
+    if (drawn) {
+        drawings[drawnum].style.display = "none";
+        drawn = false;
+        drawnum++;
+        if (drawnum >= drawings.length){
+            drawnum = 0; 
+        }
     } else {
-        drawing.style.display = "none";
+        drawings[drawnum].style.display = "block";
+        lissajous_p5.setup();
+        serpinski_p5.setup();
+        drawn = true;
     }
 }

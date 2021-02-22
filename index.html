@@ -10,6 +10,7 @@
         rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
         crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
 </head>
 
 <body>
@@ -42,21 +43,25 @@
                 <a href="assets/resume.pdf">resume</a>.
                 </p>
 
-                <input type="button" id="sleep_b" class="button" value="Sleepy?" onclick="hide()">
-                <input type="button" id="p5_b" class="button" value="Draw" onclick="reset()">
+                <div id="buttons">
+                    <input type="button" id="sleep_b" class="button" value="Sleepy?" onclick="hide()">
+                    <input type="button" id="p5_b" class="button" value="Draw" onclick="drawing()">
 
-                <table class='table table-bordered' id="sleep">
-                    <tr>
-                        <th>Cycles</th>
-                        <th>Time</th>
-                    </tr>
-                </table>
+                    <table class='table table-bordered' id="sleep">
+                        <tr>
+                            <th>Cycles</th>
+                            <th>Time</th>
+                        </tr>
+                    </table>
 
-                <div id="p5">
-                    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
-                    <script src="triangle.js"></script>
-                    <script src="point.js"></script>
+                    <div id="serpinski">
+                        <script src="serpinski.js"></script>
+                    </div>
+                    <div id="lissajous">
+                        <script src="lissajous.js"></script>
+                    </div>
                 </div>
+
             </div>
 
         </div>
