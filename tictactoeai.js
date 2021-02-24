@@ -202,7 +202,7 @@ var b = function ( sketch ) {
         "x---------": [
             "tie",
             9,
-            1
+            9
         ],
         "ox--------": [
             "tie",
@@ -287,7 +287,7 @@ var b = function ( sketch ) {
         "oxoxox-ox-": [
             "tie",
             2,
-            6
+            9
         ],
         "xxoxox-oxo": [
             "tie",
@@ -327,7 +327,7 @@ var b = function ( sketch ) {
         "oxxoox-xo-": [
             "tie",
             2,
-            6
+            9
         ],
         "oxoxox-x-o": [
             "lose",
@@ -337,7 +337,7 @@ var b = function ( sketch ) {
         "oxoxox--xo": [
             "tie",
             2,
-            6
+            7
         ],
         "oxx-o--xo-": [
             "tie",
@@ -347,12 +347,12 @@ var b = function ( sketch ) {
         "xxxoo--xo-": [
             "tie",
             3,
-            5
+            9
         ],
         "oxxoo-xxo-": [
             "tie",
             2,
-            5
+            9
         ],
         "xxxoooxxo-": [
             "tie",
@@ -497,7 +497,7 @@ var b = function ( sketch ) {
         "oxoxo---x-": [
             "tie",
             4,
-            5
+            9
         ],
         "xxoxoo--x-": [
             "tie",
@@ -532,7 +532,7 @@ var b = function ( sketch ) {
         "xxoxo---xo": [
             "tie",
             3,
-            5
+            7
         ],
         "oxoxo----x": [
             "lose",
@@ -572,7 +572,7 @@ var b = function ( sketch ) {
         "oxxoooxx--": [
             "tie",
             2,
-            8
+            9
         ],
         "xxxoooxx-o": [
             "tie",
@@ -652,12 +652,12 @@ var b = function ( sketch ) {
         "oxox-o--x-": [
             "tie",
             4,
-            4
+            9
         ],
         "xxox-o-ox-": [
             "tie",
             3,
-            4
+            9
         ],
         "xxox---o--": [
             "win",
@@ -712,7 +712,7 @@ var b = function ( sketch ) {
         "oxxoo-xx-o": [
             "tie",
             2,
-            5
+            8
         ],
         "oxxoo--xxo": [
             "win",
@@ -747,7 +747,7 @@ var b = function ( sketch ) {
         "oxox-x-oxo": [
             "tie",
             2,
-            4
+            6
         ],
         "oxx-o--x-o": [
             "tie",
@@ -767,12 +767,12 @@ var b = function ( sketch ) {
         "oxox---ox-": [
             "tie",
             4,
-            4
+            9
         ],
         "xxox---oxo": [
             "tie",
             3,
-            4
+            6
         ],
         "oxox---x-o": [
             "lose",
@@ -882,7 +882,7 @@ var b = function ( sketch ) {
         "oxxooxx-o-": [
             "tie",
             2,
-            7
+            9
         ],
         "xxxooxx-oo": [
             "tie",
@@ -902,7 +902,7 @@ var b = function ( sketch ) {
         "oxxooxx--o": [
             "tie",
             2,
-            7
+            8
         ],
         "oxxoox--xo": [
             "lose",
@@ -912,7 +912,7 @@ var b = function ( sketch ) {
         "oxxoo-x---": [
             "tie",
             4,
-            5
+            9
         ],
         "xxxooox---": [
             "tie",
@@ -977,7 +977,7 @@ var b = function ( sketch ) {
         "xxxoo-x-o-": [
             "tie",
             3,
-            5
+            9
         ],
         "oxxoo-x-ox": [
             "tie",
@@ -987,7 +987,7 @@ var b = function ( sketch ) {
         "xxxoo-x--o": [
             "tie",
             3,
-            5
+            8
         ],
         "oxxoo-x-xo": [
             "tie",
@@ -1547,7 +1547,7 @@ var b = function ( sketch ) {
         "oxoooxx-x-": [
             "tie",
             2,
-            7
+            9
         ],
         "xxoooxxox-": [
             "win",
@@ -1722,12 +1722,12 @@ var b = function ( sketch ) {
         "xxo-oxx--o": [
             "tie",
             3,
-            3
+            8
         ],
         "oxo-oxx-xo": [
             "tie",
             2,
-            3
+            7
         ],
         "oxo-ox---x": [
             "lose",
@@ -1802,7 +1802,7 @@ var b = function ( sketch ) {
         "oxo--xxoxo": [
             "tie",
             2,
-            3
+            4
         ],
         "oxo--x-ox-": [
             "tie",
@@ -1812,7 +1812,7 @@ var b = function ( sketch ) {
         "xxo--x-oxo": [
             "tie",
             3,
-            3
+            6
         ],
         "oxo--x-o-x": [
             "lose",
@@ -1862,7 +1862,7 @@ var b = function ( sketch ) {
         "oxo--x--xo": [
             "tie",
             4,
-            3
+            7
         ],
         "oxo---x---": [
             "tie",
@@ -1997,7 +1997,7 @@ var b = function ( sketch ) {
         "oxo-o-x-x-": [
             "tie",
             4,
-            3
+            9
         ],
         "xxo-oox-x-": [
             "win",
@@ -2012,7 +2012,7 @@ var b = function ( sketch ) {
         "xxo-o-x-xo": [
             "tie",
             3,
-            3
+            7
         ],
         "oxx---o-ox": [
             "lose",
@@ -2057,7 +2057,7 @@ var b = function ( sketch ) {
         "oxo--ox-x-": [
             "tie",
             4,
-            3
+            9
         ],
         "xxo--oxox-": [
             "tie",
@@ -2072,7 +2072,7 @@ var b = function ( sketch ) {
         "xxo--ox-xo": [
             "tie",
             3,
-            3
+            7
         ],
         "oxx--oo--x": [
             "win",
@@ -2092,12 +2092,12 @@ var b = function ( sketch ) {
         "oxo---xox-": [
             "tie",
             4,
-            3
+            9
         ],
         "xxo---xoxo": [
             "tie",
             3,
-            3
+            5
         ],
         "oxx---oo-x": [
             "lose",
@@ -2127,7 +2127,7 @@ var b = function ( sketch ) {
         "oxo---x-xo": [
             "tie",
             4,
-            3
+            7
         ],
         "oxo----x--": [
             "lose",
@@ -2247,7 +2247,7 @@ var b = function ( sketch ) {
         "oxo-----x-": [
             "tie",
             6,
-            7
+            9
         ],
         "xxoo----x-": [
             "win",
@@ -2292,7 +2292,7 @@ var b = function ( sketch ) {
         "xxo----ox-": [
             "tie",
             5,
-            3
+            9
         ],
         "oxxo----ox": [
             "tie",
@@ -2302,7 +2302,7 @@ var b = function ( sketch ) {
         "xxo-----xo": [
             "tie",
             5,
-            3
+            7
         ],
         "oxo------x": [
             "tie",
@@ -2732,7 +2732,7 @@ var b = function ( sketch ) {
         "xxxo----o-": [
             "tie",
             5,
-            7
+            9
         ],
         "oxxox---o-": [
             "win",
@@ -3062,7 +3062,7 @@ var b = function ( sketch ) {
         "ox-o--x---": [
             "tie",
             6,
-            4
+            5
         ],
         "xx-o-ox---": [
             "tie",
@@ -3127,7 +3127,7 @@ var b = function ( sketch ) {
         "ox-o--x-xo": [
             "tie",
             4,
-            2
+            5
         ],
         "ox-x---o--": [
             "lose",
@@ -3207,7 +3207,7 @@ var b = function ( sketch ) {
         "xx---o----": [
             "tie",
             7,
-            2
+            9
         ],
         "oxx--o----": [
             "tie",
@@ -3307,7 +3307,7 @@ var b = function ( sketch ) {
         "ox---ox---": [
             "tie",
             6,
-            2
+            9
         ],
         "xx---ox-o-": [
             "tie",
@@ -3317,17 +3317,17 @@ var b = function ( sketch ) {
         "xx---ox--o": [
             "tie",
             5,
-            2
+            8
         ],
         "ox---ox-xo": [
             "tie",
             4,
-            2
+            7
         ],
         "ox---o---x": [
             "tie",
             6,
-            2
+            8
         ],
         "xx----o---": [
             "win",
@@ -3457,27 +3457,27 @@ var b = function ( sketch ) {
         "ox---x---o": [
             "tie",
             6,
-            3
+            7
         ],
         "ox----x--o": [
             "tie",
             6,
-            4
+            7
         ],
         "o-x-------": [
             "tie",
             8,
-            1
+            8
         ],
         "xox-------": [
             "tie",
             7,
-            4
+            9
         ],
         "oox-x-----": [
             "tie",
             6,
-            5
+            8
         ],
         "xoxox-----": [
             "win",
@@ -3617,7 +3617,7 @@ var b = function ( sketch ) {
         "xox-x-o---": [
             "tie",
             5,
-            3
+            9
         ],
         "oox-xxo---": [
             "tie",
@@ -3627,7 +3627,7 @@ var b = function ( sketch ) {
         "xox-xxo-o-": [
             "tie",
             3,
-            3
+            9
         ],
         "xox-xxo--o": [
             "win",
@@ -3747,7 +3747,7 @@ var b = function ( sketch ) {
         "xox--x--o-": [
             "tie",
             5,
-            4
+            9
         ],
         "oox--xx-o-": [
             "tie",
@@ -3822,7 +3822,7 @@ var b = function ( sketch ) {
         "xox---x-o-": [
             "tie",
             5,
-            4
+            9
         ],
         "xox---x--o": [
             "win",
@@ -3917,7 +3917,7 @@ var b = function ( sketch ) {
         "o-x-x-o---": [
             "tie",
             6,
-            1
+            7
         ],
         "x-x-xoo---": [
             "win",
@@ -3957,12 +3957,12 @@ var b = function ( sketch ) {
         "x-x--o----": [
             "tie",
             7,
-            1
+            9
         ],
         "o-x-xo----": [
             "tie",
             6,
-            1
+            7
         ],
         "xo---ox-x-": [
             "win",
@@ -4002,22 +4002,22 @@ var b = function ( sketch ) {
         "x-x-----o-": [
             "tie",
             7,
-            1
+            9
         ],
         "o-x--x--o-": [
             "tie",
             6,
-            1
+            9
         ],
         "o----x----": [
             "tie",
             8,
-            1
+            9
         ],
         "xo---x----": [
             "tie",
             7,
-            2
+            9
         ],
         "x-o--x----": [
             "win",
@@ -4025,6 +4025,6 @@ var b = function ( sketch ) {
             1
         ]
     }
-}
 
+}
 var tictactoeai_p5 = new p5(b, 'tictactoeai');
