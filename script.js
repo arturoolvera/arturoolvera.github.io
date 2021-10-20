@@ -23,14 +23,23 @@ for (i = 0; i <= 6; i++) {
 
 table.style.display = "none";
 
-function hide() {
+function showTable() {
+    table.style.display = "inline-table";
+    button.value = "Sleep!";
+    window.scrollTo(0,document.body.scrollHeight);
+}
+
+function hideTable() {
+    table.style.display = "none";
+    button.value = "Sleepy?"
+}
+
+function toggleTable() {
     if (table.style.display === "none") {
-        table.style.display = "inline-table";
-        button.value = "Sleep!";
-        window.scrollTo(0,document.body.scrollHeight);
+        hideDrawing();
+        showTable();
     } else {
-        table.style.display = "none";
-        button.value = "Sleepy?"
+        hideTable();
     }
 }
 
@@ -41,20 +50,29 @@ serpinski_draw.style.display = "none";
 lissajous_draw.style.display = "none";
 tictactoeai_draw.style.display = "none";
 
-function drawing() {
+function hideDrawing() {
+    drawings[drawnum].style.display = "none";
+    drawn ? drawnum++ : null; // only update if was already drawn
+    drawn = false;
+    if (drawnum >= drawings.length){
+        drawnum = 0;
+    }
+}
+
+function showDrawing() {
+    drawings[drawnum].style.display = "block";
+    lissajous_p5.setup();
+    serpinski_p5.setup();
+    tictactoeai_p5.setup();
+    drawn = true;
+    window.scrollTo(0,document.body.scrollHeight);
+}
+
+function toggleDrawing() {
     if (drawn) {
-        drawings[drawnum].style.display = "none";
-        drawn = false;
-        drawnum++;
-        if (drawnum >= drawings.length){
-            drawnum = 0; 
-        }
+        hideDrawing();
     } else {
-        drawings[drawnum].style.display = "block";
-        lissajous_p5.setup();
-        serpinski_p5.setup();
-        tictactoeai_p5.setup();
-        drawn = true;
-        window.scrollTo(0,document.body.scrollHeight);
+        hideTable();
+        showDrawing();
     }
 }
