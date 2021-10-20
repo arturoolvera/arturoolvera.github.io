@@ -18,20 +18,14 @@ var b = function ( sketch ) {
     }
 
     sketch.mouseClicked = function() {
-        sketch.test();
-        sketch.makeMove(sketch.mouseX, sketch.mouseY);
+        //sketch.makeMove(sketch.mouseX, sketch.mouseY);
+        return false;
     }
 
-    sketch.touchEnded = function() {
-        if (sketch.touches.size >= 1) {
-            var x = sketch.touches[0].x;
-            var y = sketch.touches[0].y;
-            sketch.makeMove(x, y);
+    sketch.touchStarted = function() {
+        if (sketch.touches.length > 0) {
+            sketch.makeMove(sketch.touches[0].x, sketch.touches[0].y);
         }
-    }
-
-    sketch.test = function() {
-        sketch.ellipse(150,150,10,10);
     }
 
     sketch.makeMove = function(x, y) {
