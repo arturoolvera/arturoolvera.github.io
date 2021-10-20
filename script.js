@@ -27,6 +27,7 @@ function hide() {
     if (table.style.display === "none") {
         table.style.display = "inline-table";
         button.value = "Sleep!";
+        window.scrollTo(0,document.body.scrollHeight);
     } else {
         table.style.display = "none";
         button.value = "Sleepy?"
