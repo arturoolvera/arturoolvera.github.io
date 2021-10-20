@@ -18,6 +18,7 @@ var b = function ( sketch ) {
     }
 
     sketch.mouseClicked = function() {
+        sketch.test();
         sketch.makeMove(sketch.mouseX, sketch.mouseY);
     }
 
@@ -27,6 +28,10 @@ var b = function ( sketch ) {
             var y = sketch.touches[0].y;
             sketch.makeMove(x, y);
         }
+    }
+
+    sketch.test = function() {
+        sketch.ellipse(150,150,10,10);
     }
 
     sketch.makeMove = function(x, y) {
