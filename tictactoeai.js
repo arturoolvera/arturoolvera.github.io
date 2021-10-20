@@ -37,7 +37,7 @@ var b = function ( sketch ) {
         return false;
     }
 
-    sketch.touchStarted = function() {
+    sketch.touchEnded = function() {
         sketch.mouseClicked();
         return false;
     }
