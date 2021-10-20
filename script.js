@@ -55,5 +55,6 @@ function drawing() {
         serpinski_p5.setup();
         tictactoeai_p5.setup();
         drawn = true;
+        window.scrollTo(0,document.body.scrollHeight);
     }
 }
