@@ -34,6 +34,7 @@ var b = function ( sketch ) {
                 sketch.checkWin();
             }
         }
+        return false;
     }
 
 
