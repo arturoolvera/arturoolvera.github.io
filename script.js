@@ -46,7 +46,6 @@ function drawing() {
         drawings[drawnum].style.display = "none";
         drawn = false;
         drawnum++;
-        console.log(drawnum);
         if (drawnum >= drawings.length){
             drawnum = 0; 
         }

@@ -18,7 +18,19 @@ var b = function ( sketch ) {
     }
 
     sketch.mouseClicked = function() {
-        s = sketch.getPos(sketch.mouseX, sketch.mouseY);
+        sketch.makeMove(sketch.mouseX, sketch.mouseY);
+    }
+
+    sketch.touchEnded = function() {
+        if (sketch.touches.size >= 1) {
+            var x = sketch.touches[0].x;
+            var y = sketch.touches[0].y;
+            sketch.makeMove(x, y);
+        }
+    }
+
+    sketch.makeMove = function(x, y) {
+        s = sketch.getPos(x, y);
         if (grid[9] != 'e' && s != -1) {
             if (grid[9] == 'x' && grid[s] == '-') {
                 grid[s] = 'x';
@@ -34,14 +46,8 @@ var b = function ( sketch ) {
                 sketch.checkWin();
             }
         }
-        return false;
-    }
 
-    sketch.touchEnded = function() {
-        sketch.mouseClicked();
-        return false;
     }
-
 
     sketch.checkWin = function() {
         winstates = [[0,1,2], [3,4,5], [6,7,8], [0,4,8], [6,4,2], [0,3,6], [1,4,7],
