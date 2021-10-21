@@ -18,7 +18,7 @@ var b = function ( sketch ) {
     }
 
     sketch.mouseClicked = function() {
-        //sketch.makeMove(sketch.mouseX, sketch.mouseY);
+        sketch.makeMove(sketch.mouseX, sketch.mouseY);
     }
 
     sketch.touchStarted = function() {
