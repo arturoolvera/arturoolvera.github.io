@@ -3,6 +3,7 @@ var button = document.getElementById("sleep_b");
 var serpinski_draw = document.getElementById("serpinski");
 var lissajous_draw = document.getElementById("lissajous");
 var tictactoeai_draw = document.getElementById("tictactoeai");
+var pong_draw = document.getElementById("pong");
 
 var curr = new Date();
 for (i = 0; i <= 6; i++) {
@@ -43,12 +44,13 @@ function toggleTable() {
     }
 }
 
-var drawings = [serpinski_draw, lissajous_draw, tictactoeai_draw]
+var drawings = [serpinski_draw, lissajous_draw, tictactoeai_draw, pong_draw]
 var drawn = false; 
 var drawnum = 0; 
 serpinski_draw.style.display = "none";
 lissajous_draw.style.display = "none";
 tictactoeai_draw.style.display = "none";
+pong_draw.style.display = "none";
 
 function hideDrawing() {
     drawings[drawnum].style.display = "none";
@@ -64,6 +66,7 @@ function showDrawing() {
     lissajous_p5.setup();
     serpinski_p5.setup();
     tictactoeai_p5.setup();
+    pong_p5.setup();
     drawn = true;
     window.scrollTo(0,document.body.scrollHeight);
 }
